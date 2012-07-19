@@ -1,3 +1,7 @@
+package com.cwatson;
+
+import java.util.List;
+
 /**
  * Created by IntelliJ IDEA.
  * User: jcwatso
@@ -5,5 +9,7 @@
  * Time: 8:49 AM
  * To change this template use File | Settings | File Templates.
  */
-public interface Sort {
+public interface Sort<T> {
+
+   List<T> sort(List<T> items);
 }
