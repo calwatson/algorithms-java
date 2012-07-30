@@ -15,12 +15,16 @@
  * is strictly forbidden unless prior written permission is obtained
  * from RST Group Inc.
  */
-package graphs;
+package com.cwatson.graphs;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author cwatson
- * @since 7/17/12
+ * @since 7/24/12
  */
-public class Edge {
+public class Graph {
+    List<Edge> edges = new ArrayList<Edge>();
 
 }

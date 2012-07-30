@@ -15,34 +15,21 @@
  * is strictly forbidden unless prior written permission is obtained
  * from RST Group Inc.
  */
-package graphs;
+package com.cwatson.graphs;
 
 /**
  * @author cwatson
  * @since 7/17/12
  */
-public class Node {
-    private Double weight;
-    private String label;
+public class Edge {
+    Vertex one;
+    Vertex two;
 
-    public Node(Double weight, String label) {
-        this.weight = weight;
-        this.label = label;
+    public Edge(Vertex one, Vertex two) {
+        this.one = one;
+        this.two = two;
     }
 
-    public String getLabel() {
-        return label;
-    }
 
-    public void setLabel(String label) {
-        this.label = label;
-    }
 
-    public Double getWeight() {
-        return weight;
-    }
-
-    public void setWeight(Double weight) {
-        this.weight = weight;
-    }
 }
